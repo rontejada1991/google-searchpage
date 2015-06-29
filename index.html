@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>google-hompage</title>
+  <style type="text/css">
+
+
+    /* Top nav bar - header */
+    #header {
+      text-align: right;
+    }
+
+    #header > a {
+      color: black;
+      text-decoration: none;
+      padding-right: 9px;
+    }
+
+    #header > a.user {
+      color: grey;
+    }
+
+    /* Main content */
+    #content {
+      position: relative;
+      top: 175px;
+    }
+
+    #logo {
+      width: 269px;
+      height: 95px;
+      padding-bottom: 25px;
+    }
+
+    #searchbar {
+      width: 437px;
+      height: 19.188px;
+    }
+
+    #logo, #searchbar {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #searchbutton, #luckybutton {
+      margin: 0 auto;
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+
+    #searchbuttonbox {
+      text-align: center;
+      padding-top: 15px;
+    }
+
+    /* Bottom nav bar - footer */
+    #footer {
+      background-color: #d3d3d3;
+      height: 40px;
+      border-top: 1px solid black;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #footer a {
+      color: #777;
+      text-decoration: none;
+    }
+
+    #leftfooter {
+      float: left;
+
+    }
+
+    #rightfooter {
+      float: right;
+    }
+
+    #leftfooter a {
+     padding-left: 9px;
+    }
+
+    #rightfooter a {
+      padding-right: 9px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="header">
+    <a href="#" class="user">Ronald</a>
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+  </div>
+  
+  <div id="content">
+    <img src="logo11w.png" id="logo">
+    <form>
+      <input type="text" id="searchbar">
+      <div id="searchbuttonbox">
+        <input type="button" id="searchbutton" value="Google Search">
+        <input type="button" id="luckybutton"
+        value="I'm Feeling Lucky">
+      </div>
+    </form>
+  </div>
+
+  <div id="footer">
+    <div id="leftfooter">
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">About</a>
+    </div>   
+
+    <div id="rightfooter">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
+    </div>
+       
+  </div>
+
+</body>
+</html>
