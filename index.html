@@ -67,11 +67,15 @@
       margin-left: 80px;
     }
 
-    #searchtabs > li {
-      display:  inline;
+    #searchtabs > li, #optionstabs > li {
+      display: inline;
       list-style-type: none;
       padding-right: 20px;
       color: grey;
+    }
+
+    #footer > #optionstabs {
+      margin-left: 80px;
     }
 
     #searchbuttonbox {
@@ -103,9 +107,7 @@
     /* Bottom nav bar - footer */
     #footer {
       background-color: #f5f5f5;
-      height: 40px;
       border-top: 1px solid black;
-      position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
@@ -116,21 +118,20 @@
       text-decoration: none;
     }
 
-    #leftfooter {
-      float: left;
-
+    #footer ul {
+      margin-left: 100px;
     }
 
-    #rightfooter {
-      float: right;
+    #searchtabs > li:first-child {
+      color: red;
     }
 
-    #leftfooter a {
-     padding-left: 9px;
+    .line {
+      border: 1px solid grey;
     }
 
-    #rightfooter a {
-      padding-right: 9px;
+    .grey_text {
+      color: grey;
     }
 
   </style>
@@ -162,6 +163,8 @@
       <li>Search Tools</li>
     </ul>
 
+    <div class="line"></div>
+
     <p>About 4,340,000 results (0.52 seconds)</p>
 
     <div id="searchresults">
@@ -183,7 +186,7 @@
 
       <h1>How to Make a Website - Step-by-Step Guide for Beginners</h1>
       <h2>websitesetup.org/</h2>
-      <p>Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal & HTML. WordPress vs Joomla vs - ‎About & Support - ‎HTML5 Beginner's Guide</p>
+      <p>Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal and HTML. WordPress vs Joomla vs - About and Support - HTML5 Beginner's Guide</p>
 
       <h1>BuiltWith Technology Lookup</h1>
       <h2>builtwith.com/</h2>
@@ -210,17 +213,16 @@
   </div>
 
   <div id="footer">
-    <div id="leftfooter">
-      <a href="#">Advertising</a>
-      <a href="#">Business</a>
-      <a href="#">About</a>
-    </div>   
+      <ul>
+        <li class="grey_text">New York, NY - From your Internet address - Use precise location - Learn more</li>
+      </ul>
 
-    <div id="rightfooter">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Settings</a>
-    </div>
+      <ul id="optionstabs">
+        <li><a href="#" class="grey_text">Help</a></li>
+        <li><a href="#" class="grey_text">Send feedback</a></li>
+        <li><a href="#" class="grey_text">Privacy</a></li>
+        <li><a href="#" class="grey_text">Terms</a></li>
+      </ul>
   </div>
 
 </body>
